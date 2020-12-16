@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+  
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+      <ul class="nav">
+        <li class="nav-item nav-profile"> <a href="#" class="nav-link">
+          <div class="text-wrapper">
+            <p class="profile-name">Current User</p>
+            <p class="designation">Administrator</p>
+          </div>
+          </a> </li>
+        <li class="nav-item nav-category"><span class="nav-link">Dashboard</span></li>
+        <li class="nav-item"> <a class="nav-link" href="./main.php"> <span class="menu-title">Home</span> <i class="icon-screen-desktop menu-icon"></i> </a> </li>
+        <li class="nav-item nav-category"><span class="nav-link">Elements</span></li>
+<!--        <li class="nav-item"> <a class="nav-link" href="./index.html"> <span class="menu-title">Create Guided Tour</span> <i class="icon-map menu-icon"></i> </a> </li>-->
+        <li class="nav-item"> <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth"> 
+          <span class="menu-title">Guided Tours</span> <i class="icon-directions menu-icon"></i> </a>
+          <div class="collapse" id="auth">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item"><a class="nav-link" href="./InsertGuidedTour.php"> Tours by us </a></li>
+              <li class="nav-item"><a class="nav-link" href="./UnconfirmedTours.php"> Tours by Customers </a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item"> <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic"> 
+          <span class="menu-title">Add</span> <i class="icon-plus menu-icon"></i> </a>
+          <div class="collapse" id="ui-basic">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item"><a class="nav-link" href="./addPoiForm.php"> Point of Interest </a></li>
+              <li class="nav-item"><a class="nav-link" href="./addDriverForm.php"> Driver </a></li>
+              <li class="nav-item"><a class="nav-link" href="./addGuideForm.php"> Guide </a></li>
+              <li class="nav-item"><a class="nav-link" href="./addVehicleForm.php"> Vehicle </a></li>
+              <li class="nav-item"><a class="nav-link" href="./addUserForm.php"> User </a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item nav-category"><span class="nav-link">Availabilities</span></li>
+        <li class="nav-item"> <a class="nav-link" href="./availableGuides.php"> <span class="menu-title">Guides</span> <i class="icon-user-following menu-icon"></i> </a> </li>
+        <li class="nav-item"> <a class="nav-link" href="./availableDrivers.php"> <span class="menu-title">Drivers</span> <i class=" icon-direction menu-icon"></i> </a> </li>
+        <li class="nav-item"> <a class="nav-link" href="./availableVehicles.php"> <span class="menu-title">Vehicles</span> <i class="icon-speedometer menu-icon"></i> </a> </li>
+        <li class="nav-item"> <a class="nav-link" href="./availablePois.php"> <span class="menu-title">Points of Interest</span> <i class="icon-graph menu-icon"></i> </a> </li>
+        <li class="nav-item nav-category"><span class="nav-link">About</span></li>
+        <li class="nav-item"> <a class="nav-link" href="./about.php"> <span class="menu-title">Our Team</span> <i class="icon-people menu-icon"></i> </a> </li>
+      </ul>
+    </nav>
+  
+  
+</body>
+</html>
