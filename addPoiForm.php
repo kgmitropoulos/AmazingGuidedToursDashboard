@@ -67,31 +67,38 @@
                   <form class="forms-sample" name="PoiData" action="../Scripts/InsertPoi.php" method="post" role="form" enctype="multipart/form-data">
                     <div class="form-group">
                       <label for="PoiNameField">POI Name</label>
-                      <input type="text" class="form-control" id="PoiNameField" placeholder="POI Name" value="">
+                      <!-- Added code for matomo -->
+                      <input type="text" class="form-control" id="PoiNameField" placeholder="POI Name" value="" onclick="_paq.push(['trackEvent', 'Insert poi page', 'Poi name input Click'])">
                     </div>
                     <div class="form-group">
                       <label for="PoiAddressField">POI Address</label>
-                      <input type="email" class="form-control" id="PoiAddressField" placeholder="POI Address" value="">
+                      <!-- Added code for matomo -->
+                      <input type="email" class="form-control" id="PoiAddressField" placeholder="POI Address" value="" onclick="_paq.push(['trackEvent', 'Insert poi page', 'Poi address input Click'])">
                     </div>
                     <div class="form-group">
                       <label for="PoiLatitudeField">POI Latitude</label>
-                      <input type="text" class="form-control" id="PoiLatitudeField" placeholder="POI Latitude" value="">
+                      <!-- Added code for matomo -->
+                      <input type="text" class="form-control" id="PoiLatitudeField" placeholder="POI Latitude" value="" onclick="_paq.push(['trackEvent', 'Insert poi page', 'Poi latitude input Click'])">
                     </div>
                     <div class="form-group">
                       <label for="PoiLongitudeField">POI Longitude</label>
-                      <input type="text" class="form-control" id="PoiLongitudeField" placeholder="POI Longitude" value="">
+                      <!-- Added code for matomo -->
+                      <input type="text" class="form-control" id="PoiLongitudeField" placeholder="POI Longitude" value="" onclick="_paq.push(['trackEvent', 'Insert poi page', 'Poi longitude input Click'])">
                     </div>
                     <div class="form-group">
                       <label for="PoiBriefInfoField">POI bief info</label>
-                      <textarea class="form-control" id="PoiBriefInfoField" placeholder="POI bief info" value=""></textarea>
+                      <!-- Added code for matomo -->
+                      <textarea class="form-control" id="PoiBriefInfoField" placeholder="POI bief info" value="" onclick="_paq.push(['trackEvent', 'Insert poi page', 'Poi brief info input Click'])"></textarea>
                     </div>
                     <div class="form-group">
                       <label for="PoiDetailedInfoField">POI full info</label>
-                      <textarea class="form-control" id="PoiDetailedInfoField" placeholder="POI full info" value=""></textarea>
+                      <!-- Added code for matomo -->
+                      <textarea class="form-control" id="PoiDetailedInfoField" placeholder="POI full info" value="" onclick="_paq.push(['trackEvent', 'Insert poi page', 'Poi full info input Click'])"></textarea>
                     </div>
                     <div class="form-group">
                       <label for="imageFile">POI Image</label>
-                      <input type="file" name="imageFile" class="file-upload-default" id="imageFile">
+                      <!-- Added code for matomo -->
+                      <input type="file" name="imageFile" class="file-upload-default" id="imageFile" onclick="_paq.push(['trackEvent', 'Insert poi page', 'Poi image input Click'])">
                       <div class="input-group col-xs-12">
                         <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image">
                         <span class="input-group-append">
@@ -99,8 +106,10 @@
                       </span>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-success mr-2" name="saveData" value="saveData">Submit</button>
-                    <button type="button" class="btn btn-danger mr-2" name="cancel" value="cancel" onclick="window.location.href='./addPoiForm.php'">Cancel</button>
+                    <!-- Added code for matomo -->
+                    <button type="submit" class="btn btn-success mr-2" name="saveData" value="saveData" onclick="_paq.push(['trackEvent', 'Insert poi page', 'Poi submit button Click'])">Submit</button>
+                    <!-- Added code for matomo -->
+                    <button type="button" class="btn btn-danger mr-2" name="cancel" value="cancel" onclick="window.location.href='./addPoiForm.php'" onclick="_paq.push(['trackEvent', 'Insert poi page', 'Poi cancel insert Click'])">Cancel</button>
                   </form>
                 </div>
               </div>

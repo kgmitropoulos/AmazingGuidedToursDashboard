@@ -90,23 +90,28 @@ include 'Scripts/FindGuides.php';
                         </select>
                         <div class="form-group">
                           <label for="GuidedTourVisitorsNumberField">Visitors number:</label>
-                          <input type="text" class="form-control" id="GuidedTourVisitorsNumberField" name="GuidedTourVisitorsNumberField" value="">
+                          <!-- Added code for matomo -->    
+                          <input type="text" class="form-control" id="GuidedTourVisitorsNumberField" name="GuidedTourVisitorsNumberField" value="" onclick="_paq.push(['trackEvent', 'Insert guided tour page', 'Tour visitor numbers input button Click'])">
                         </div>
                         <div class="form-group">
                           <label for="GuidedTourDateField">Date:</label>
-                          <input type="date" class="form-control" name="GuidedTourDateField" id="GuidedTourDateField" value="2020-12-01" min="2020-01-01" max="2021-12-31">
+                          <!-- Added code for matomo -->
+                          <input type="date" class="form-control" name="GuidedTourDateField" id="GuidedTourDateField" value="2020-12-01" min="2020-01-01" max="2021-12-31" onclick="_paq.push(['trackEvent', 'Insert guided tour page', 'Tour date input button Click'])">
                         </div>
                         <div class="form-group">
                           <label for="GuidedTourStartTimeField">Start time:</label>
-                          <input type="time" class="form-control" name="GuidedTourStartTimeField" id="GuidedTourStartTimeField" value="2020-12-01" min="09:00" max="20:00">
+                          <!-- Added code for matomo -->
+                          <input type="time" class="form-control" name="GuidedTourStartTimeField" id="GuidedTourStartTimeField" value="2020-12-01" min="09:00" max="20:00" onclick="_paq.push(['trackEvent', 'Insert guided tour page', 'Tour start time input button Click'])">
                         </div>
                         <div class="form-group">
                           <label for="GuidedTourEndTimeField">End time:</label>
-                          <input type="time" class="form-control" name="GuidedTourEndTimeField" id="GuidedTourEndTimeField" value="2020-12-01" min="10:00" max="21:00">
+                          <!-- Added code for matomo -->
+                          <input type="time" class="form-control" name="GuidedTourEndTimeField" id="GuidedTourEndTimeField" value="2020-12-01" min="10:00" max="21:00" onclick="_paq.push(['trackEvent', 'Insert guided tour page', 'Tour end time input button Click'])">
                         </div>
                         <div class="form-group">
                           <label for="GuidedTourStartPoiField">Start poi:</label>
-                          <select name="GuidedTourStartPoiField" class="form-control" id="GuidedTourStartPoiField">
+                          <!-- Added code for matomo -->
+                          <select name="GuidedTourStartPoiField" class="form-control" id="GuidedTourStartPoiField" onclick="_paq.push(['trackEvent', 'Insert guided tour page', 'Tour start poi selection Click'])">
                             <option>Select start poi</option>
                             <!--Filling dropdown with pois "from scripts/FindPois.php" -->
                             <?php
@@ -121,7 +126,8 @@ include 'Scripts/FindGuides.php';
                         </div>
                         <div class="form-group">
                           <label for="GuidedTourEndPoiField">End poi:</label>
-                          <select name="GuidedTourEndPoiField" class="form-control" id="GuidedTourStartPoiField">
+                          <!-- Added code for matomo -->
+                          <select name="GuidedTourEndPoiField" class="form-control" id="GuidedTourStartPoiField" onclick="_paq.push(['trackEvent', 'Insert guided tour page', 'Tour end poi selection Click'])">
                             <option>Select end poi</option>
                             <!--Filling dropdown with pois "from scripts/FindPois.php" -->
                             <?php
@@ -136,7 +142,8 @@ include 'Scripts/FindGuides.php';
                         </div>
                         <div class="form-group">
                           <label for="GuidedTourVehicleField">Vehicle:</label>
-                          <select name="GuidedTourVehicleField" class="form-control" id="GuidedTourVehicleField">
+                          <!-- Added code for matomo -->
+                          <select name="GuidedTourVehicleField" class="form-control" id="GuidedTourVehicleField" onclick="_paq.push(['trackEvent', 'Insert guided tour page', 'Tour vehicle selection Click'])">
                             <option>Select vehicle</option>
                             <!--Filling dropdown with vehicle "from scripts/FindVehicles.php" -->
                             <?php
@@ -151,7 +158,8 @@ include 'Scripts/FindGuides.php';
                         </div>
                         <div class="form-group">
                           <label for="GuidedTourDriverField">Driver:</label>
-                          <select name="GuidedTourDriverField" class="form-control" id="GuidedTourDriverField">
+                          <!-- Added code for matomo -->
+                          <select name="GuidedTourDriverField" class="form-control" id="GuidedTourDriverField" onclick="_paq.push(['trackEvent', 'Insert guided tour page', 'Tour driver selection Click'])">
                             <option>Select driver</option>
                             <!--Filling dropdown with drivers "from scripts/FindDrivers.php" -->
                             <?php
@@ -166,7 +174,8 @@ include 'Scripts/FindGuides.php';
                         </div>
                         <div class="form-group">
                           <label for="GuidedTourGuideField">Guide:</label>
-                          <select name="GuidedTourGuideField" class="form-control" id="GuidedTourGuideField">
+                          <!-- Added code for matomo -->
+                          <select name="GuidedTourGuideField" class="form-control" id="GuidedTourGuideField" onclick="_paq.push(['trackEvent', 'Insert guided tour page', 'Tour guide selection Click'])">
                             <option>Select guide</option>
                             <!--Filling dropdown with guides "from scripts/FindDrivers.php" -->
                             <?php
@@ -180,8 +189,10 @@ include 'Scripts/FindGuides.php';
                           </select>
                         </div>
                         <div class="form-group">
-                          <input type="submit" class="btn btn-success mr-2" name="SaveTour" value="Save Tour">
-                          <button type="button" class="btn btn-danger mr-2" name="cancel" value="cancel" onclick="window.location.href='./InsertGuidedTour.php'">Cancel</button>
+                          <!-- Added code for matomo -->
+                          <input type="submit" class="btn btn-success mr-2" name="SaveTour" value="Save Tour" onclick="_paq.push(['trackEvent', 'Insert guided tour page', 'Tour submit button Click'])">
+                          <!-- Added code for matomo -->
+                          <button type="button" class="btn btn-danger mr-2" name="cancel" value="cancel" onclick="window.location.href='./InsertGuidedTour.php'" onclick="_paq.push(['trackEvent', 'Insert guided tour page', 'Tour cancel button Click'])">Cancel</button>
                         </div>
                     </form>
                     </div>
